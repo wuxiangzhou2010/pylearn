@@ -1,0 +1,2 @@
+- [Dive Into Python](http://www.diveintopython.net/index.html)
+- [Dive Into Python3](http://www.diveintopython3.net/index.html)

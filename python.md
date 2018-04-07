@@ -95,5 +95,17 @@ process/thread based parallelism
 
 
 
-#### 
-shutil.rmtree(m_dir) sh util
+### [Import order](https://www.youtube.com/watch?v=CqvZ3vGoGs0&t=1065s)
+
+When import a module, it actually run the code in that module, including the function definition and variables
+
+1. current path
+2. standard libiary path
+2. site_package path
+
+add to the sys.path
+``` python 
+import sys
+sys.path.append('/path/to/module')
+```
+export PYTHONPATH="/PATH/TO/MODULE"
