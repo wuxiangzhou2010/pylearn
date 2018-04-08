@@ -109,3 +109,56 @@ import sys
 sys.path.append('/path/to/module')
 ```
 export PYTHONPATH="/PATH/TO/MODULE"
+
+
+### [CI and CD --Cs50](https://www.youtube.com/watch?v=alMRNeRJKUE&t=3683s)
+
+ continous intergration and delivery
+Jenkins 
+using github together with travis
+
+[Travis CI](https://travis-ci.org)
+``` yml
+language: python
+python:
+    - 3.6
+install:
+    - pip install -r requirements.txt
+script:
+    - python manage.py test
+```
+
+using containers to keep same environment
+``` Dockerfile
+FROM   python:3
+WORKDIR /usr/src/app
+ADD requirements.txt /usr/src/app  
+RUN pip install -r requirements/txt
+ADD . /usr/src/app
+```
+
+docker-compose.yml
+
+``` yml
+version: '3'
+services:
+    db:
+        image: postgres
+    migration:
+        build:.
+        command: python3 manage.py migrate
+        volumes:
+            -.:/usr/src/app
+        depends_on:
+            - db
+    web:
+        build: .
+        command: python3 manage.py runserver 0.0.0.0:8000
+        volumes:
+            - /:/usr/src/app
+        ports"
+            - "8000:8000"
+        depends_on:
+            - db
+            - migration
+```
