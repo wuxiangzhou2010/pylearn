@@ -162,3 +162,8 @@ services:
             - db
             - migration
 ```
+
+
+method          - need the object/instance
+static method   - need the class
+class method    - do not need the class
