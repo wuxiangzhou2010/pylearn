@@ -64,9 +64,9 @@ ssl a TLS/SSL wrapper for socket Objects
 requests.get()
 
 ###  for pillow image 
-
+```
 from PIL import Image
-
+```
 ### socks is not an official feature supported in python
 
 [socksipy](https://sourceforge.net/projects/socksipy/)
@@ -163,9 +163,9 @@ services:
             - migration
 ```
 
-## functions
+### functions
 
-## class 
+### class 
 ``` python
 class Point:
     def __init__(self, x, y):
@@ -183,3 +183,21 @@ method          - need the object/instance
 static method   - need the class
 class method    - do not need the class
 
+### __init__.py
+```
+The __init__.py files are required to make Python treat the directories as containing packages;
+this is done to prevent directories with a common name, such as string, from unintentionally hiding valid modules that occur later on the module search path. 
+```
+
+
+### __init__ function
+```
+__init__ is the constructor for a class. The self parameter refers to the instance of the object (like this in C++).
+```
+
+
+### __main__  __name__
+```
+'__main__' is the name of the scope in which top-level code executes.
+Every module in python has a special attribute called __name__ . The value of __name__  attribute is set to '__main__'  when module run as main program. Otherwise the value of __name__  is set to contain the name of the modu
+```
