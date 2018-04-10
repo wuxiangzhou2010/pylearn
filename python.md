@@ -163,7 +163,23 @@ services:
             - migration
 ```
 
+## functions
+
+## class 
+``` python
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+p = Poinit(3, 5)
+print(p.x)
+print(p.y)
+```
+
+
+### static method and class method
 
 method          - need the object/instance
 static method   - need the class
 class method    - do not need the class
+
