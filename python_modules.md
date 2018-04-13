@@ -1,5 +1,6 @@
-### Python3 modules
-```
+# Python3 modules
+
+``` txt
 re regular express
 xml
 os
@@ -23,7 +24,7 @@ ssl
 hmac
 sqlite3
 _md5
-socket 
+socket
 socketserver
 smtplib
 ftplib

@@ -1,9 +1,9 @@
+# Python
 
-## Python
+## Install pip
 
-### Install pip
 ``` bash
-# sudo apt-get install python3-pip 
+# sudo apt-get install python3-pip
 # sudo pip3 install --upgrade pip
 wget https://bootstrap.pypa.io/get-pip.py
 python3 get-pip.py
@@ -18,7 +18,8 @@ sudo pip3 install urlparse2
 ### Python networking and servers
 
 Python3 udp tcp socket http https
-``` 
+
+``` txt
 socket
 socketServer  Classes that simplily writing network servers
 +------------+
@@ -47,10 +48,9 @@ DatagramRequestHandler
     ForkingUDPServer
     ThreadingUDPServer
 
-
 ```
 
-### http 
+### http
 
     http.client
     http.server
@@ -59,20 +59,21 @@ DatagramRequestHandler
 
 ssl a TLS/SSL wrapper for socket Objects
 
-### requests is based on [urllib3](https://github.com/urllib3/urllib3) 
+### requests is based on [urllib3](https://github.com/urllib3/urllib3)
 
 requests.get()
 
-###  for pillow image 
-```
+### for pillow image
+
+``` python
 from PIL import Image
 ```
+
 ### socks is not an official feature supported in python
 
 [socksipy](https://sourceforge.net/projects/socksipy/)
 
-
-### [C++ socket ](https://www.cs.rutgers.edu/~pxk/417/notes/sockets/index.html)
+### [C++ socket](https://www.cs.rutgers.edu/~pxk/417/notes/sockets/index.html)
 
 ``` c++
 #include <sys/socket>
@@ -93,31 +94,33 @@ multiprocessing/threading
 
 process/thread based parallelism
 
-
-
 ### [Import order](https://www.youtube.com/watch?v=CqvZ3vGoGs0&t=1065s)
 
 When import a module, it actually run the code in that module, including the function definition and variables
 
 1. current path
 2. standard libiary path
-2. site_package path
+3. site_package path
 
 add to the sys.path
-``` python 
+
+``` python
 import sys
 sys.path.append('/path/to/module')
 ```
-export PYTHONPATH="/PATH/TO/MODULE"
 
+``` sh
+export PYTHONPATH="/PATH/TO/MODULE"
+```
 
 ### [CI and CD --Cs50](https://www.youtube.com/watch?v=alMRNeRJKUE&t=3683s)
 
  continous intergration and delivery
-Jenkins 
+Jenkins
 using github together with travis
 
 [Travis CI](https://travis-ci.org)
+
 ``` yml
 language: python
 python:
@@ -129,10 +132,11 @@ script:
 ```
 
 using containers to keep same environment
+
 ``` Dockerfile
 FROM   python:3
 WORKDIR /usr/src/app
-ADD requirements.txt /usr/src/app  
+ADD requirements.txt /usr/src/app
 RUN pip install -r requirements/txt
 ADD . /usr/src/app
 ```
@@ -165,7 +169,8 @@ services:
 
 ### functions
 
-### class 
+### class
+
 ``` python
 class Point:
     def __init__(self, x, y):
@@ -176,7 +181,6 @@ print(p.x)
 print(p.y)
 ```
 
-
 ### static method and class method
 
 method          - need the object/instance
@@ -184,20 +188,21 @@ static method   - need the class
 class method    - do not need the class
 
 ### __init__.py
-```
-The __init__.py files are required to make Python treat the directories as containing packages;
-this is done to prevent directories with a common name, such as string, from unintentionally hiding valid modules that occur later on the module search path. 
-```
 
+``` txt
+The __init__.py files are required to make Python treat the directories as containing packages;
+this is done to prevent directories with a common name, such as string, from unintentionally hiding valid modules that occur later on the module search path.
+```
 
 ### __init__ function
-```
+
+``` txt
 __init__ is the constructor for a class. The self parameter refers to the instance of the object (like this in C++).
 ```
 
-
 ### __main__  __name__
-```
+
+``` txt
 '__main__' is the name of the scope in which top-level code executes.
 Every module in python has a special attribute called __name__ . The value of __name__  attribute is set to '__main__'  when module run as main program. Otherwise the value of __name__  is set to contain the name of the modu
 ```
