@@ -1,10 +1,15 @@
-Python debugging tools
+# Python debugging tools
+
+``` bash
 pdb:
-import pdb 
+import pdb
 a = "aaa"
-pdb.set_trace() 
+pdb.set_trace()
+```
+
+``` txt
 =================================
-break 或 b       设置断点	设置断点
+break 或 b       设置断点
 continue 或 c    继续执行程序
 list 或 l        查看当前行的代码段
 step 或 s        进入函数
@@ -14,3 +19,4 @@ next 或 n        执行下一行
 pp               打印变量的值
 help             帮助
 =================================
+```
