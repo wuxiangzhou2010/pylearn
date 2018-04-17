@@ -42,3 +42,4 @@ pillow
 ```
 
 [bs4](https://www.crummy.com/software/BeautifulSoup/)
+[python buildin](https://docs.python.org/3/library/index.html)
