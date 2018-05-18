@@ -115,8 +115,17 @@ export PYTHONPATH="/PATH/TO/MODULE"
 
 ### [CI and CD --Cs50](https://www.youtube.com/watch?v=alMRNeRJKUE&t=3683s)
 
- continous intergration and delivery
+continous intergration and delivery
 Jenkins
+    tomcat
+    git
+    build jobs
+    Unit Testing
+    Automated Testing
+    Notification
+    Reporting
+    Code Analysis
+
 using github together with travis
 
 [Travis CI](https://travis-ci.org)
