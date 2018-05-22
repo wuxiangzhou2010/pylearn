@@ -14,11 +14,14 @@ url_for('index')
 <a href="{{url_for('index')}}">GO back</a>
 ```
 
+<!--   hide for future addtion
 ## layout template
 
-```
+``` html
 {% extends "layout.html" %}
 ```
+
+hide for future addtion-->
 
 ## session
 
