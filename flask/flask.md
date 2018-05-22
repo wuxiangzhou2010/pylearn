@@ -16,7 +16,7 @@ url_for('index')
 
 ## layout template
 
-``` html
+```
 {% extends "layout.html" %}
 ```
 
