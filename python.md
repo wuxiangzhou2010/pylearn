@@ -3,15 +3,22 @@
 ## Install pip
 
 ``` bash
-# sudo apt-get install python3-pip
-# sudo pip3 install --upgrade pip
-wget https://bootstrap.pypa.io/get-pip.py
-python3 get-pip.py
+curl https://bootstrap.pypa.io/get-pip.py | python
+# for windows need to set the path
+# C:\Users\wuxiang\AppData\Local\Programs\Python\Python36\Scripts
+# C:\Users\wuxiang\AppData\Local\Programs\Python\Python36
+
+# verify pip
+pip freeze
+
 # for jsonlines
 sudo pip3 install jsonlines
 # for PIL and Image
 sudo pip3 install Pillow
 sudo pip3 install urlparse2
+
+# uninstall
+pip uninstall pillow
 
 ```
 
